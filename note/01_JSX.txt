@@ -1,0 +1,26 @@
+01_JSX.txt
+
+1. 01_JSX
+
+  - Javascript + XML/HTML
+  - JS 내부에서 HTML과 유사하게 생긴 XML을 사용하여 코드의 가독성을 올리기 위한 확장 문법
+  
+  const btn1 = React.createElement('button', {onClick: () => {}}, '성공');
+  const btn2 = <button onClick={ () => {} }> 성공 </button>  -> XML
+
+  - JSX 문법 내부에서 자바스크립트 문법을 사용하고 싶다면 {} 영역을 생성한다.
+  - 문자열 이외의 타입을 사용할때는 {}로 감싼 후 데이터를 사용해야한다.
+
+2. React.createElement(type, props, [children])
+
+  - react에서 원하는 컴포넌트로 요소를 생성하기 위한 메서드
+  - type : 기본 HTML 태그를 사용하거나, 다른 리액트 컴포넌트를 넣어 요소를 생성할 수 있다.
+  - props : 해당 요소를 생성할 때 필요한 속성 값들을 JS객체 형태로 전달한다
+            {
+                id : 1,
+                password : 'abcd1233'
+                userName : '사용자1'
+            }
+  - children : 해당 요소 내부의 내용을 어떤것들이 있는지 전달한다.
+               (하나로 전달하던지, 배열형태로 전달한다.
+                텍스트 노드, 다른 컴포넌트, 다른 태그 등)

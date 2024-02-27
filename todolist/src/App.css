@@ -1,0 +1,63 @@
+main {
+  display: grid;
+  margin: 20% 20% 0 20% ;
+  align-items: center;
+}
+
+
+input[type="text"] {
+  width: 250px;
+  height: 30px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid lightcoral;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: crimson;
+}
+
+.addBtn{
+  position: absolute;
+  margin: 5px;
+  background-color: lightcoral;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.addBtn:hover {
+  background-color: crimson;
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  border: 1px solid lightcoral;
+}
+
+.todo-item button {
+  background-color: lightcoral;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.todo-item button:hover {
+  background-color: crimson;
+}

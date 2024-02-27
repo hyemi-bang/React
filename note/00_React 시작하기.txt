@@ -1,0 +1,29 @@
+00_React 시작하기.txt
+
+1. 설치 순서
+    (1) VS code 설치
+    (2) Node.js 설치
+    (3) Ctrl + Shift + ` 터미널을 연 후 
+    (4) npx create-react-app ex2[프로젝트 명] 
+                => error (npm ERR! errno -4058) : https://velog.io/@jhcha/typescript-npm-ERR-path-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0
+                => 캐시지우기 : npm cache clean --force
+                => npm 업데이트 (-g : 전역설치) : npm install -g npm
+                => 다시 실행 : npx create-react-app ex2    
+                * npm : ex> node 진영의 메이븐
+    (5) cd 프로젝트 폴더 명
+    (6) 프로젝트 위치에서 npm start
+    
+2. React란 무엇인가?
+    - 웹 페이지를 체계적으로 개발할 수 있게 되는 JavaScript 라이브러리
+    - HTML/CSS/JavaScript를 사용하여 views를 만들면 유지보수가 힘들어지는 단점을 보완하기 위해 만들어진 라이브러리
+        (화면 동작하게 하려할 때 코드가 길어지고, 코드 양이 많아지는 문제)
+    - 페이스북을 개발할 때 사용했던 라이브러리 오픈 소스로 공개된 것이다. (트위터 개발 오픈소스 - 부트스트랩)
+
+3. React의 특징
+    - 마크 저커버그가 밀어주는 언어이기 때문에 안정감이 높아 "커뮤니티"가 많이 활성되어 있다.
+    - 계속 변화하기 때문에 끊임없이 공부해야한다.
+    - 컴포넌트 다뉘로 웹 페이지를 조립하듯이 구성한다.
+    - SPA(Single Page Application)를 개발하기에 최적화 되어있는 라이브러리이다.
+        서버는 REST 하나만 하고, index.js 에서 계속 변화하는 
+    - 비교적 적은 비용으로 DOM을 교체할 수 있도록 실제 DOM이 아닌 가상 DOM을 사용한다.
+    
