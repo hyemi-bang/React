@@ -4,12 +4,14 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import BakedSalmon from './cook/BakedSalmon';
 import BakedSalmonList from './quiz/BakedSalmonList';
+import AlarmListQuiz from './AlarmQuiz/AlarmListQuiz';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BakedSalmon />
     <BakedSalmonList/>
+    <AlarmListQuiz/>
   </React.StrictMode>
 );
 
