@@ -22,16 +22,19 @@ function App() {
   };
 
   const handleKeyDown =(e)=>{
+    if(e.key === 'Enter'){
+      addItem();
+    }
   };
 
   return (
     <main>
       <div className='input-container'>
-    <input value={inputValue} type="text" onChange={(e)=>setInputValue(e.target.value)}  
-    //  (e)=>console.log(e.target.value)
-    onKeyDown={handleKeyDown}/>
-    <button className='addBtn' onClick={addItem}>추가</button>
-    </div>
+        <input value={inputValue} type="text" onChange={(e)=>setInputValue(e.target.value)}  
+        //  (e)=>console.log(e.target.value)
+        onKeyDown={handleKeyDown}/>
+        <button className='addBtn' onClick={addItem}>추가</button>
+      </div>
     <TodoBoard todoList={todoList} onDelete={deleteItem}/> 
     {/* Appdl 가지고 있는 todoList를 todoBoard에게 전달하기 위해서는 
     props를 사용해야한다 */}
